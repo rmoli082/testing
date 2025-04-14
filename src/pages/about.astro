@@ -1,5 +1,7 @@
 ---
 const pageTitle = "About Me";
+const homeTitle = "Home";
+const blogTitle = "Journals"
 
 const identity = {
     firstName: "Robert",
@@ -25,7 +27,7 @@ const goal = 3;
   </head>
   <body>
     <a href="/">
-        Home
+        {homeTitle}
     </a>
      | 
     <a href="/about/">
@@ -33,12 +35,9 @@ const goal = 3;
     </a>
      | 
     <a href="/blog/">
-		Blog
+		{blogTitle}
 	</a>
-     | 
-    <h1>
-        About Me
-    </h1>
+     |
     <h1>
         {pageTitle}
     </h1>
