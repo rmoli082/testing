@@ -1,5 +1,5 @@
 ---
-title: 'My First Blog Post'
+title: 'Daily Mood Journal 1'
 pubDate: 2025-04-14
 description: 'This is the first post of my new blog.'
 author: 'Robert Molinaro'
@@ -8,11 +8,9 @@ image:
     alt: 'The Astro logo on a dark pink background with a pink glow'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My First Blog Post
+# Daily Mood Journal
 
-Published on: 2025-04-14
-
-## Daily Mood Journal
+## Published on: 2025-04-14
  
  ### Describe the situation or event that lead to your unhelpful thoughts/emotions/behaviours
  I was standing in front of my whiteboard in the morning planning my day/week out.
