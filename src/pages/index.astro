@@ -1,9 +1,8 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "Home";
-const aboutTitle = "About Me";
-const blogTitle = "Journals";
 ---
 
 <html lang="en">
@@ -15,20 +14,18 @@ const blogTitle = "Journals";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">
-        {pageTitle}
-    </a>
-     | 
-    <a href="/about/">
-        {aboutTitle}
-    </a>
-     | 
-    <a href="/blog/">
-		{blogTitle}
-	</a>
-     | 
-    <h1>
-        {pageTitle}
-    </h1>
+	<Navigation />
+	<h1>
+		{pageTitle}
+	</h1>
+	<h3>
+		Welcome to my website. Please note that I'm following along a tutorial or seven while I make this site. So please pardon my dust.
+	</h3>
+	<p>
+		I'm currently on an introduction to Astro tutorial. My knowledge level of HTML and CSS are beginner level and my JS and Astro are intro level. I'll keep updating here as I get better and better.
+	</p>
+	<p>
+		Astro Introduction Tutorial: <b>Unit 3</b>
+	</p>
   </body>
 </html>
