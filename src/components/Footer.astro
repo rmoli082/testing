@@ -1,0 +1,47 @@
+---
+import Social from '../components/Social.astro';
+
+const gitPlatform = "github";
+const gitUser = "rmoli082";
+
+const photoPlatform = "instagram";
+const photoUser = "_rmoli082";
+
+const businessPlatform = "linkedin";
+const businessUser = "rmoli082";
+
+const socials = [
+    {
+        platform: "instagram",
+        username: "_rmoli082"
+    },
+    {
+        platform: "github",
+        username: "rmoli082"
+    },
+    {
+        platform: "linkedin",
+        username: "in/rmolinaro/"
+    }
+]
+---
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    
+</style>
+
+<footer>
+    <hr />
+    <p class = "">
+        Socials:
+    </p>
+    <ul>
+        {socials.map((network) => <li><Social platform={network.platform} username={network.username} /></li>)}
+    </ul>
+</footer>
