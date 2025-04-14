@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Journals";
 ---
 
 <html lang="en">
@@ -7,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">
@@ -15,16 +16,19 @@
     </a>
      | 
     <a href="/about/">
-        About
+        About Me
     </a>
      | 
     <a href="/blog/">
-		Blog
+		{pageTitle}
 	</a>
-     | 
+
     <h1>
-        Daily Mood Journals
+        {pageTitle}
     </h1>
+    <h2>
+        Daily Mood Journals
+    </h2>
     <p>
         This is where I'll post my daily mood journals that I write. I'm going to use this site to simultaneously practice my Astro coding while working on my mental health. Or something.
     </p>
