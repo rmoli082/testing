@@ -16,7 +16,7 @@ tags: ["mood journal", "blogging", "mental health"]
  | Pessimistic   |   85  |  25   |         |
  | Ashamed       |   80  |  10   |         |
 
- ### How are these emotions or thoughts an expression of my positive qualities?
+### How are these emotions or thoughts an expression of my positive qualities?
 
  |  Thought/Feeling  |          Advantages         |         Core Values         |
  |:------------------|:----------------------------|:----------------------------|
@@ -24,7 +24,7 @@ tags: ["mood journal", "blogging", "mental health"]
  | Pessimistic | It can prevent me from getting my hopes up too high so I don't feel disappointed if I don't succeed | This shows that I'm realistic because I've already had failures with this, and indicates a strong desire to change |
  | Ashamed | This feeling is appropriate because it indicates I know that I'm not pulling my weight | It shows that I still want to change things and that I know I have to put the work in |
 
- ### Cognitive Distortions
+### Cognitive Distortions
 
  | Unhelpful (Automatic) | Before | After | Distortions | Helpful (Reframe) |
  |:----------------------|:------:|:-----:|:-----------:|:-----------------:|
