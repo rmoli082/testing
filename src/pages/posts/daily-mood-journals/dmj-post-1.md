@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
-title: 'Daily Mood Journal 1'
+layout: ../../../layouts/BlogPostLayout.astro
+title: 'Daily Mood Journal - April 14'
 pubDate: 2025-04-14
-description: 'This is the first post of my new blog.'
+description: 'The first of many wherein I nearly have a panic attack.'
 author: 'Robert Molinaro'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark pink background with a pink glow'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["mood journal", "blogging", "mental health"]
 ---
 
 ### Describe the situation or event that lead to your unhelpful thoughts/emotions/behaviours

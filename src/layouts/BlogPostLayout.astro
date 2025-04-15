@@ -4,8 +4,34 @@ import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 
+<style>
+    a {
+        color: #00539F;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        margin: 0.25em;
+        border: dotted 1px #a1a1a1;
+        border-radius: .5em;
+        padding: .5em 1em;
+        font-size: 1.15em;
+        background-color: #f8fcfd;
+    }
+</style>
+
 <Layout pageTitle={frontmatter.title}>
-    <p><strong>Published: {frontmatter.pubDate.toString().slice(0,10)}</strong>
-    <br/>Written by {frontmatter.author}</p>
+    <p><strong>Published: {frontmatter.pubDate.toString().slice(0,10)}</strong></p>
     <slot />
+    <hr />
+    <div class="tags">
+        {frontmatter.tags.map((tag: string) => (
+          <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+        ))}
+      </div>
+      <p>Written by {frontmatter.author}</p>
 </Layout>
