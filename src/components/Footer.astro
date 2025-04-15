@@ -29,7 +29,8 @@ const socials = [
 <style>
     footer {
         display: flex;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: .5rem;
         margin-top: 2rem;
     }
 
@@ -37,11 +38,13 @@ const socials = [
 </style>
 
 <footer>
-    <hr />
-    <p class = "">
-        Socials:
-    </p>
-    <ul>
-        {socials.map((network) => <li><Social platform={network.platform} username={network.username} /></li>)}
-    </ul>
+    <hr style="width:100%" />
+    <div style="width:30%">
+        <p>
+            Socials:
+        </p>
+        <ul>
+            {socials.map((network) => <li><Social platform={network.platform} username={network.username} /></li>)}
+        </ul>
+    </div>
 </footer>

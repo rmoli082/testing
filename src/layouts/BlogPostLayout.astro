@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props;
     }
 </style>
 
-<Layout pageTitle={frontmatter.title}>
+<Layout pageTitle={frontmatter.title} visible=true>
     <p><strong>Published: {frontmatter.pubDate.toString().slice(0,10)}</strong></p>
     <slot />
     <hr />

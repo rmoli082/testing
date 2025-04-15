@@ -20,6 +20,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+p {
+    margin-top: 10px;
+}
+
 .visibility {
     visibility: hidden;
 }
