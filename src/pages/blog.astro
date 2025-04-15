@@ -1,13 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import BlogPost from '../components/BlogPost.astro';
 
-const dmjPosts = Object.values(import.meta.glob('./posts/daily-mood-journals/*.md', { eager: true}));
-const jourPosts = Object.values(import.meta.glob('./posts/journals/*.md', {eager: true}));
-const pageTitle = "Journals";
----
+const posts = await getCollection("blog");
 
-<Layout pageTitle={pageTitle}>
+const dmjPosts = posts.filter((post: any) => post.id.includes("daily"));
+const jourPosts = posts.filter((post: any) => post.id.includes("reflections"));
+const pageTitle = "Journals";
+
+const visible = true;
+---
+<Layout pageTitle={pageTitle} visible={visible}>
     <p>
         This is where I'll post my daily mood journals that I write. I'm going to use this site to simultaneously practice my Astro coding while working on my mental health. Or something.
     </p>
@@ -15,12 +19,12 @@ const pageTitle = "Journals";
         Daily Mood Journals
     </h2>
     <p>
-        {dmjPosts.map((post: any) => <BlogPost title={post.frontmatter.title} url={post.url} /><br />)}
+        {dmjPosts.map((post) => <BlogPost title={post.data.title} url={post.id} /><br />)}
     </p>
     <h2>
         Journal
     </h2>
     <p>
-        {jourPosts.map((post: any) => <BlogPost title={post.frontmatter.title} url={post.url} /><br />)}
+        {jourPosts.map((post) => <BlogPost title={post.data.title} url={post.id} /><br />)}
     </p>
 </Layout>

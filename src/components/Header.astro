@@ -1,11 +1,15 @@
 ---
 import Navigation from './Navigation.astro';
 import Hamburger from './Hamburger.astro';
+import ThemeIcon from './ThemeIcon.astro';
+
+const {visible} = Astro.props;
 ---
 
 <header>
     <nav>
         <Hamburger />
-        <Navigation />
+        <ThemeIcon />
+        <Navigation visible={visible}/>
     </nav>
 </header>

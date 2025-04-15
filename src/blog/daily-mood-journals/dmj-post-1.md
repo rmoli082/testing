@@ -1,12 +1,8 @@
 ---
-layout: ../../../layouts/BlogPostLayout.astro
 title: 'Daily Mood Journal - April 14'
 pubDate: 2025-04-14
 description: 'The first of many wherein I nearly have a panic attack.'
 author: 'Robert Molinaro'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark pink background with a pink glow'
 tags: ["mood journal", "blogging", "mental health"]
 ---
 

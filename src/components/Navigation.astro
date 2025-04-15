@@ -3,23 +3,9 @@ const homeTitle = "Home";
 const aboutTitle = "About Me";
 const blogTitle = "Journals";
 const tagTitle = "Tag Index";
+
+const {visible} = Astro.props;
 ---
-
-<style>
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tag {
-        margin: 0.25em;
-        border: dotted 1px #a1a1a1;
-        border-radius: .5em;
-        padding: .5em 1em;
-        font-size: 1.15em;
-        background-color: #f8fcfd;
-    }
-</style>
 
 <div class="nav-links tags">
     <a class = "tag" href="/">
@@ -34,8 +20,8 @@ const tagTitle = "Tag Index";
         {blogTitle}
     </a>
 
-    <a class = "tag" href="/tags/">
+    {visible && <a id="tag_tab" class = "tag" href="/tags/">
         {tagTitle}
-    </a>
+    </a>}
      
 </div>
